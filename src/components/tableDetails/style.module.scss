@@ -1,0 +1,65 @@
+.table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    thead {
+        background-color: var(--blue-600);
+        color: var(--white);
+    }
+    
+    th {
+        padding: 1rem 0.6rem;
+    }
+
+    tbody {
+        tr {
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: #f3f3f3;
+            }
+        }
+
+        td {
+            padding: 1rem 0.6rem;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    table, thead, tbody, th, tr, td {
+      display: block;
+    }
+  
+    thead {
+      display: none; // Pode optar por esconder o cabeçalho
+    }
+  
+    tr {
+      margin-bottom: 1rem;
+    }
+  
+    td {
+      // Cada célula se comporta como um bloco com um rótulo
+      position: relative;
+      padding-left: 50%;
+      
+      &::before {
+        // Rótulo de célula
+        content: attr(data-label); // Use o atributo data-label para os rótulos
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+  }

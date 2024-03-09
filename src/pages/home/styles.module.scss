@@ -1,0 +1,82 @@
+.containerHome {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 1.5rem;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem 0 ;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .boxDetails {
+        width: 100%;
+        margin-top: 2rem;
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .contentHeaderDetails {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 1rem;
+
+        .boxPreview {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 13%;
+            max-width: 13%;
+
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 0.35rem;
+            }
+
+            .contentShapes {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border: 1px solid #e0e0e0;
+                padding: 0.25rem;
+                border-radius: 0.35rem;
+                width: 100%;
+
+                div {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.2rem;
+                    cursor: pointer;
+
+                    &:first-child {
+                        border-radius: 0.35rem 0 0 0.35rem;
+                    }
+
+                    &:last-child {
+                        border-left: 2px solid #e0e0e0;
+                        border-radius: 0 0.35rem 0.35rem 0;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                        margin-bottom: 0.35rem;
+                    }
+                }
+            }
+        }
+    }
+}

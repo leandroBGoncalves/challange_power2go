@@ -1,0 +1,69 @@
+.containerAll {
+    width: 100%;
+    margin-bottom: 2rem;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 3rem;
+        border: 1px solid #e0e0e0;
+        border-radius: 0.35rem;
+        background-color: #e0e0e0;
+        transition: all 0.3s;
+        box-shadow: 3px 3px 0.25rem #d0d0d0;
+    
+        &:hover {
+            background-color: #d0d0d0;
+        }
+    
+        input {
+            width: 96%;
+            height: 100%;
+            padding: 0.35rem;
+            border-radius: 0.35rem;
+            border: 0;
+            font-size: 16px;
+            color: var(--black-600);
+            outline: none;
+        }
+        svg {
+            font-size: 2.3rem;
+            padding: 0.5rem;
+            color: var(--black-600);
+            cursor: pointer;
+        }
+    }
+
+    .contentOptions {
+        width: 100%;
+        background-color: #e0e0e0;
+        border-radius: 0 0 0.35rem 0.35rem;
+        padding: 0.35rem;
+
+        .lineOptions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #FFFFFF;
+            border-radius: 0.35rem;
+            padding: 0.35rem;
+            cursor: pointer;
+
+            p {
+                font-size: 1rem;
+                color: var(--black-600);
+                transition: all 0.3s;
+
+                &:hover {
+                    color: var(--black-500);
+                }
+            }
+
+            & + .lineOptions {
+                margin-top: 0.35rem;
+            }
+        }
+    }
+}
